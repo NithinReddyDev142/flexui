@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example</title>
+    <link rel="shortcut icon" href="./Flexbox.png" type="image/x-icon" />
+   
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            gap: 20px;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: calc(33.333% - 20px);
+            box-sizing: border-box;
+        }
+        .card img {
+            max-width: 90px;
+            margin-bottom: 15px;
+        }
+        .card h2 {
+            font-size: 18px;
+            margin: 0 0 10px;
+        }
+        .card p {
+            font-size: 14px;
+            margin: 0 0 15px;
+        }
+        .card i{
+            color: green;
+            margin-bottom: 10px;
+        }
+        .card .installs {
+            font-size: 12px;
+            color: grey;
+        }
+        .card a {
+            text-decoration: none;
+            color: blue;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX1y9bRtwN4tkv5dwh33YdbbnJIBj-PRHmWg&s" alt="Stripe">
+            <h2>phonepe</h2>
+            <p>Payment Services</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <p>Get more context on your users with stripe data inside our platform.</p>
+            <div class="installs">Installed 172 times</div>
+            <a href="#">View ></a>
+        </div>
+        <div class="card">
+            <img src="https://cdn.dribbble.com/userupload/8174911/file/still-61f7b2d644b4450349f5f622792de280.gif?resize=400x0" alt="Mailchimp">
+            <h2>Myntra</h2>
+            <p> sells fashion and lifestyle products </p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <p>Myntra is an Indian e-commerce company that sells fashion and lifestyle products online..</p>
+            <div class="installs">Installed 1234 times</div>
+            <a href="#">View ></a>
+        </div>
+        <div class="card">
+            <img src="https://blog.adobe.com/en/publish/2020/05/28/media_1cc0fcc19cf0e64decbceb3a606707a3ad23f51dd.png?width=1200&format=pjpg&optimize=medium" alt="Dropbox">
+            <h2>Adobe</h2>
+            <p>Document Management System</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <p>Use Adobe to sync your photos to our platform and share it with others.</p>
+            <div class="installs">Installed 1234 times</div>
+            <a href="#">View ></a>
+        </div>
+        <div class="card">
+            <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/2024-spotify-brand-assets-media-kit.jpg" alt="Shopify">
+            <h2>Spotify</h2>
+            <p>Digital Music</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <p>Spotify is an audio streaming and media service provider that offers online and offline access to music and podcasts.</p>
+            <div class="installs">Installed 1234 times</div>
+            <a href="#">View ></a>
+        </div>
+        <div class="card">
+            <img src="https://static.startuptalky.com/2022/09/Bata-logo.png" alt="Atlassian">
+            <h2>Bata</h2>
+            <p>Footwear Company</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <p>Incorporated as Bata Shoe Company Private Limited in 1931, the company was set up initially as a small operation in Konnagar (near Calcutta) in 1932.</p>
+            <div class="installs">Installed 345 times</div>
+            <a href="#">View ></a>
+        </div>
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/SAP_2011_logo.svg/1200px-SAP_2011_logo.svg.png" alt="Salesforce">
+            <h2>SAP</h2>
+            <p>Project management</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <p>Developing products for developers, project managers and architects.</p>
+            <div class="installs">Installed 345 times</div>
+            <a href="#">View ></a>
+        </div>
+    </div>
+</body>
+</html>
